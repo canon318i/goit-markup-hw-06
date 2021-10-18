@@ -7,7 +7,7 @@
   --alt-bkg-color: #f5f4fa;
   --hero-footer-color: #2f303a;
   --accent-color: #2196f3;
-  --hero-accent-color: #188ce8;
+  --btn-accent-color: #188ce8;
   --logo-black: #000000;
   --logo-white: #ffffff;
   --logo-strike: #ececec;
@@ -254,23 +254,25 @@ ul {
   color: var(--secondary-text-color);
 }
 
-.hero-btn {
+.btn {
   width: 200px;
   height: 50px;
   margin-right: auto;
   margin-left: auto;
-  border-radius: 4px;
-  border-style: none;
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   font-weight: 700;
   font-size: 16px;
   line-height: calc(30 / 16);
-  text-align: center;
   letter-spacing: 0.06em;
-  color: var(--secondary-header-color);
-  background-color: var(--accent-color);
   cursor: pointer;
+  color: var(--main-bkg-color);
+  fill: currentColor;
+  background-color: var(--accent-color);
+  border-radius: 4px;
+  border-style: none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
   transition-property: background-color;
@@ -278,9 +280,13 @@ ul {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.hero-btn:hover,
-.hero-btn:focus {
-  background-color: var(--hero-accent-color);
+.btn:hover,
+.btn:focus {
+  background-color: var(--btn-accent-color);
+}
+
+.btn svg {
+  margin-left: 10px;
 }
 
 /* Особенности */
@@ -603,29 +609,6 @@ ul {
   font-size: 16px;
   line-height: calc(20 / 16);
   color: rgba(255, 255, 255, 0.6);
-}
-
-.subscribe-submit {
-  display: inline-block;
-  width: 200px;
-  height: 50px;
-  background: var(--accent-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  border-color: transparent;
-
-  font-weight: 700;
-  font-size: 16px;
-  line-height: calc(30 / 16);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  letter-spacing: 0.06em;
-  color: var(--main-bkg-color);
-  fill: var(--main-bkg-color);
-}
-.subscribe-submit svg {
-  margin-left: 10px;
 }
 
 /* Портфолио */
