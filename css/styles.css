@@ -490,6 +490,7 @@ ul {
 }
 
 .footer-contacts {
+  flex-grow: 1;
   margin-right: 70px;
 }
 
@@ -585,10 +586,10 @@ ul {
   display: flex;
 }
 .subscribe-email-label {
+  margin-right: 12px;
 }
 .subscribe-email-input {
   display: inline-block;
-  margin-right: 12px;
   width: 358px;
   height: 50px;
   padding: 16px 15px;
@@ -906,6 +907,7 @@ ul {
 
 .modal-checkbox-group {
   margin 0 auto;
+  
 
 }
 .modal-checkbox-label {
@@ -918,6 +920,7 @@ ul {
   font-size: 14px;
   line-height: calc(24 / 14);
   color: var(--primary-text-color);
+  
  }
 
 .modal-policy-link {
@@ -926,10 +929,9 @@ ul {
 }
 
 .modal-checkbox-icon {
-  display: inline-block;
-  width: 16px;
-  height: 15px;
+  display: block;
   margin-right: 9px;
+  
   border: 2px solid var(--primary-header-color);
   border-radius: 2px;
   fill: var(--main-bkg-color);
@@ -939,7 +941,7 @@ ul {
 }
 
 .modal-checkbox:checked + .modal-checkbox-icon {
-    border-color: var(--accent-color);
+    border: 0px solid var(--accent-color);
     background-color: var(--accent-color);
 }
 
