@@ -822,11 +822,15 @@ ul {
 }
 
 .modal-input-list{
-  margin-bottom: 30px;
+  margin-bottom: 20px;
+}
+
+.modal-input-item:not(:last-child) {
+  margin-bottom: 10px;
 }
 
 .modal-input-label {
-  margin-bottom: 10px;
+  display: block;
   font-size: 12px;
   line-height: calc(14 / 12);
   letter-spacing: 0.01em;
@@ -834,15 +838,15 @@ ul {
 }
 
 .modal-input-wrapper {
-  margin-top: 4px;
-  margin-bottom: 10px;
+  display: block;
   position: relative;
+  margin-top: 4px;
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.input-icon {
+.modal-input-icon {
   position: absolute;
   top: 50%;
   left: 12px;
@@ -850,7 +854,7 @@ ul {
 }
 
 .modal-input-text {
-  /* margin-top: 4px; */
+  display: block;
   padding: 12px;
   padding-left: 42px;
 
@@ -875,6 +879,7 @@ ul {
 }
 
 .modal-comment-text {
+  display: block;
   padding: 12px 16px;
   width: 100%;
   height: 120px;
@@ -905,6 +910,7 @@ ul {
 }
 .modal-checkbox-label {
   display: flex;
+  margin-bottom: 30px;
   width: 100%;
   justify-content: center;
   align-items: center;
